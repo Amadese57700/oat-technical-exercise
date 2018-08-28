@@ -1,0 +1,192 @@
+.ec-header .top, .ec-header .title .content, .ec-header .sub-title .content, .ec-header .path .content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.ec-header {
+    background: #FFF !important;
+}
+
+.ec-header .top {
+    position: relative;
+    z-index: 1000;
+}
+.ec-header .top .content {
+    float: right;
+    text-align: right;
+    font-size: 10.8px;
+}
+
+.ec-header .top nav {
+    display: inline;
+    float: left;
+    top: 3px;
+    position: relative;
+}
+.ec-header .top nav ul li:first-child {
+    border: none;
+}
+.ec-header .top nav ul li {
+    display: inline;
+    border-left: 1px solid #396EA2;
+}
+.ec-header .top nav ul li a, a:link, a:active, a:visited {
+    padding: 0 3px;
+    color: #396EA2;
+    text-decoration: none;
+}
+.ec-header .top nav ul li a:hover {
+    text-decoration: underline;
+}
+.ec-header .title {
+    position: relative;
+    z-index: 999;
+}
+.ec-header .title .content {
+    position: relative;
+    padding-top: 69px;
+}
+.ec-header .title .ec-header-application-title {
+    display: block;
+    margin: 0;
+    padding: 0 10px 2px 248px;
+    color: #0065A2;
+    font-size: 24px;
+    line-height: 1.2em !important;
+    text-transform: uppercase;
+}
+
+.ec-header .sub-title {
+    background: #0065A2;
+}
+.ec-header .sub-title .content {
+    position: relative;
+    min-height: 45px;
+}
+.ec-header .sub-title .content .ec-header-logo {
+    position: absolute;
+    top: -85px;
+    left: 40px;
+    width: 172px;
+    height: 119px;
+    background: url("../img/logo_en.gif") top left no-repeat;
+}
+.ec-header .sub-title .content .ec-header-screen-title {
+    margin: 0px;
+    padding: 1px 10px 5px 249px;
+    color: #FFF;
+    font-size: 19px;
+}
+
+.ec-header .path {
+    background-color: #074A8B;
+}
+.ec-header .path .content {
+    overflow: hidden;
+    padding: 0 0 1px 10px;
+    min-height: 18px;
+    font-size: 11px;
+    color: #FFFFFF;
+}
+.ec-header .path .content ul {
+    padding-left: 0px;
+}
+.ec-header.path .content ul li:first-child {
+    padding: 0;
+    background: none;
+}
+.ec-header .path .content ul li {
+    display: inline;
+    float: left;
+    padding: 0 0 0 12px;
+	background: url("../img/breadcrumb.gif") no-repeat left center;
+}
+.ec-header .path .content ul li a, a:link, a:active, a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+.ec-header .path .content ul li a:hover {
+    text-decoration: underline;
+}
+.ec-header .ec-header-info {float: right; margin-top: 10px; }
+.ec-header .ec-header-user {
+        display: block;
+        clear: both;
+}
+
+
+.spacer {
+	margin-top: 20px;
+}
+.navbar > h1 {
+	margin-top: 0px;
+}
+
+.hSpacer {
+	margin-left: 20px;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th,
+.table-hover > tbody > tr:hover > td > a {
+  background-color: #428BCA;
+  color: #ffffff;
+}
+
+.clickable {
+	cursor:pointer;
+}
+
+.colPerson {
+	max-width: 20%;
+}
+
+.colCompany {
+	max-width: 20%;
+}
+
+.colDate {
+	max-width: 10%;
+}
+
+.colDescription {
+	max-width: 35%;
+}
+.colAction {
+	max-width: 15%;
+}
+
+.surbrillanceRecherche {
+	background-color: #FFD42A;
+}
+
+.input-group {
+	width: 100%;
+}
+
+input.ng-invalid {
+}
+
+.headingBlock{
+    padding: 4px 4px !important;
+}
+.headingBlock>.navbar{
+	margin-bottom:0 !important;
+	min-height: 25px !important;
+}
+.headingBlock>.navbar>.navbar-left{
+	padding-top:5px;
+	padding-left:10px;
+	font-size:1.2em;
+}
+
+div#reports_table{
+	margin:10px auto;
+	width:100%;
+	min-width:400px;
+	max-width:700px;
+}
+div#reports_table table{
+	margin:0px;
+	width:100%;
+}

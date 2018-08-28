@@ -1,0 +1,176 @@
+.angular-popover-container {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0
+}
+
+.angular-popover {
+    position: absolute;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, .2);
+    background-color: #fff;
+	z-index:3;
+}
+
+.angular-popover-template {
+    padding: 10px;
+}
+
+.popover-floating-animation-top {
+    animation: floatingtop 3s .5s infinite;
+    -webkit-animation: floatingtop 3s .5s infinite
+}
+
+.popover-floating-animation-bottom {
+    animation: floatingbottom 3s .5s infinite;
+    -webkit-animation: floatingbottom 3s .5s infinite
+}
+
+.popover-floating-animation-left {
+    animation: floatingleft 3s .5s infinite;
+    -webkit-animation: floatingleft 3s .5s infinite
+}
+
+.popover-floating-animation-right {
+    animation: floatingright 3s .5s infinite;
+    -webkit-animation: floatingright 3s .5s infinite
+}
+
+@-webkit-keyframes floatingtop {
+    from,
+    to {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0)
+    }
+    60% {
+        transform: translate(0, -8px);
+        -webkit-transform: translate(0, -8px)
+    }
+}
+
+@-webkit-keyframes floatingbottom {
+    from,
+    to {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0)
+    }
+    60% {
+        transform: translate(0, 8px);
+        -webkit-transform: translate(0, 8px)
+    }
+}
+
+@-webkit-keyframes floatingright {
+    from,
+    to {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0)
+    }
+    60% {
+        transform: translate(8px, 0);
+        -webkit-transform: translate(8px, 0)
+    }
+}
+
+@-webkit-keyframes floatingleft {
+    from,
+    to {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0)
+    }
+    60% {
+        transform: translate(-8px, 0);
+        -webkit-transform: translate(-8px, 0)
+    }
+}
+
+.hide-popover-element {
+    display: none
+}
+
+.angular-popover-triangle {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 10px -17px rgba(0, 0, 0, .2)
+}
+
+.angular-popover-triangle:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(45deg);
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, .2)
+}
+
+.angular-popover-triangle-top:after {
+    top: -8.5px;
+    left: 7px
+}
+
+.angular-popover-triangle-bottom:after {
+    top: 23.5px;
+    left: 7px
+}
+
+.angular-popover-triangle-right::after {
+    top: 7.5px;
+    left: 23.5px
+}
+
+.angular-popover-triangle-left::after {
+    top: 7.5px;
+    left: -8.5px
+}
+
+
+
+
+
+
+
+
+ul#contacts_list {
+    width: 200px;
+	margin-top:20px;
+	z-index:1;
+}
+ul#contacts_list li {
+    width: 200px;
+    list-style-type: none;
+    padding: 6px 10px;
+	z-index:2;
+}
+li:hover {
+    background: #EEE;
+}
+
+.animate-show {
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+    opacity: 1;
+}
+
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove {
+    display: inline-block !important;
+}
+.animate-show.ng-hide {
+    opacity: 0;
+}
+
+/*
+ul  .contacts_list li button {
+	padding: 10px 20px;
+	font-size: 18px;
+	color: #fff;
+	border: 0;
+    border-radius: 3px;
+	background-color: rgb(3, 169, 244);
+	cursor: pointer;
+	outline-style: none;
+	position: relative;
+}*/

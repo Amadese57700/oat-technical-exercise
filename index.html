@@ -1,0 +1,93 @@
+﻿				
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org">
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="-1">
+
+		<!--RESPONSIVE-->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+		
+		<title>OAT - List of test takers </title>
+
+		<link rel="stylesheet" href="lib/css/bootstrap-3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/css/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+
+
+		<link rel="stylesheet" href="lib/css/styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="lib/css/select.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="lib/css/ngDialog.css">
+		<link rel="stylesheet" href="lib/css/ngDialog-theme-default.css">
+		<link rel="stylesheet" href="lib/css/ngDialog-theme-plain.css">
+
+		<link rel="stylesheet" href="lib/css/angular-popover.css">
+			
+    </head>
+
+    <body ng-app="TakersApp" class="ng-app:TakersApp" id="ng-app">
+
+        <header>
+
+        </header>
+		
+		<div class="container">
+			<div class="spacer navbar">
+
+				<h1 class="nav nav-pills navbar-left">OAT takers Application<span id="release">1.0</cfoutput></span></h1>
+
+				<ul class="nav nav-pills navbar-right" data-ng-controller="NavbarController">
+					<li data-ng-class="{'active':getClass('/all-takers')}"><a href="#/all-takers">All takers</a></li>
+					<li data-ng-class="{'active':getClass('/add-taker')}"><a href="#/add-taker">Add taker</a></li>
+					<li data-ng-class="{'active':getClass('/reports')}"><a href="#/reports">Reports</a></li>
+				</ul>
+
+			</div>
+	
+	
+				<div class="dataTable" style="padding:5px;font-size: 11px;margin-bottom:10px;width:1000px">			
+					<h4>WELCOME</h4>
+					<p>Dear users,
+						<br />
+						<br />
+						Welcome to the OAT application
+						<br />
+						<br />You will be able to see the list of takers
+					</p>
+				</div>
+			
+				<ng-view></ng-view>
+ 
+		
+			<hr/>
+
+			<!--FOOTER-->
+			<div class="footer">
+                <ul class="footer-items">
+                    <li class="modification-date">
+                        <span>Last update: 24/08/2018</span>
+                    </li>
+                </ul>
+            </div>
+
+      </div>
+
+      <script src="lib/js/angular.min.js"></script>
+      <script src="lib/js/angular-route.min.js"></script>
+      <script src="lib/js/angular-sanitize.min.js"></script>
+
+      <script src="lib/js/ui-bootstrap-tpls-0.11.0.min.js"></script>
+	  <script src="app/app.js"></script>
+      <script src="app/appService.js"></script>
+	  <script src="lib/js/ngDialog.js"></script>
+	  <script src="lib/js/angular-popover.js"></script>
+
+    </body>
+</html>

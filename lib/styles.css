@@ -1,0 +1,135 @@
+body {
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+h2 {
+    font-size: 2.1429em;
+    line-height: 1.4em;
+}
+
+.container h1 {
+	font-size:4em;
+}
+
+.spacer {
+	margin-top: 20px;
+}
+.navbar  li a {
+	text-decoration:none;
+}
+.navbar > h1 {
+	margin-top: 0px;
+}
+
+.hSpacer {
+	margin-left: 20px;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th,
+.table-hover > tbody > tr:hover > td > a {
+	background-color: #428BCA;
+	color: #ffffff;
+}
+
+
+div#allTakers{
+	width:100%;
+}
+
+div#allTakers table{
+    table-layout: fixed;
+    word-wrap: break-word;	
+}
+
+.clickable {
+	cursor:pointer;
+}
+
+.surbrillanceRecherche {
+	background-color: #FFD42A;
+}
+
+input.ng-invalid {
+}
+
+.headingBlock{
+    padding: 4px 4px !important;
+}
+.headingBlock>.navbar{
+	margin-bottom:0 !important;
+	min-height: 25px !important;
+}
+.headingBlock>.navbar>.navbar-left{
+	padding-top:5px;
+	padding-left:10px;
+	font-size:1.2em;
+}
+
+h3 {
+	border: 2px solid #000000;
+	border-radius: 0px 10px 0px 10px;
+    height: 60px;
+	color:#FFFFFF;
+    padding: 15px 0 15px 20px;	
+	margin-bottom:40px;
+	background-color: #0065A2;
+	opacity: 0.7;
+	box-shadow: 2px 5px 15px #000000;	
+}
+
+div#reports_table{
+	margin:10px auto;
+	width:100%;
+	min-width:400px;
+	max-width:700px;
+}
+div#reports_table table{
+	margin:0px;
+	width:100%;
+}
+
+
+div#personDetails div.navbar-right{
+	margin-right:5px;
+}
+div#personRequests div.navbar-right{
+	margin-right:5px;
+}
+
+span.addButton, span.exportPdfButton{
+	margin-left:5px;
+	font-weight:bold;
+}
+
+span.exportPdfButton{
+	font-weight:bold;
+}
+
+.ExcelIcon{
+	background: url("../../img/Excel-icon.png") no-repeat left center;
+	height:24px;
+	padding-left:30px;
+	padding-top:3px;
+	font-weight:bold;
+	text-align:left;
+	height:24px;	
+}
+
+.PdfIcon{
+	background: url("../../img/pdf-icon.png") no-repeat left center;
+	margin-left:0px;
+	height:24px;
+	padding:4px 0 0 30px;
+	font-weight:bold;
+	text-align:left;
+	display: inline-block;
+}
+
+/* FOOTER SECTION */
+
+.footer{clear:both;padding:6px 0 7px 0;text-align:center;}
+.footer ul{margin:0;padding:0 0 0 10px;font-size:90%;}
+.footer li{display:inline;padding-left:5px;background:url("../../images/services-separator.gif") transparent left center no-repeat;}
+.footer li:first-child{background-image:none;}

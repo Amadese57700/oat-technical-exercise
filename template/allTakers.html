@@ -1,0 +1,75 @@
+
+	<h3>View all takers</h3>
+
+	<div class="spacer input-group">
+		<div class="input-group-addon">
+			<span class="glyphicon glyphicon-search"></span>
+		</div>
+		<input type="text" ng-model="searchText" class="form-control" placeholder="Search taker..." ng-change="search(searchText)"/>
+		<div class="input-group-btn">
+			<button class="btn btn-default" ng-click="razRecherche()">
+				<span class="glyphicon glyphicon-remove"></span>
+			</button>
+		</div>
+	</div>
+	
+	<div ng-show="(!searchText || (searchText.length)<3) && takers==null" id="least3Characters">
+		<p class="spacer center"><strong>Please enter at least 3 characters</strong></p>
+	</div>
+
+    <div>
+        <p class="spacer center"  ng-show="((searchText && (searchText.length)>2) || reloadPreviousSearch)" >
+			<img src="../img/loading.gif"  class="ajax-loader" ng-show="loading==true"/>
+			<strong>{{ searchButtonText }}</strong>
+		</p>
+    </div>		
+
+
+	<div class="table-responsive" id="allTakers">
+		<table ng-show="allTakers.length" class="table table-striped table-hover spacer">
+			<thead>
+				<tr>
+					<th class="colLastname">
+						<a href="" ng-click="takersSort('lastname')">Lastname</a>
+						<span class="hSpacer" ng-class="cssChevronsTri('lastname')"></span>
+					</th>
+					<th class="colFirstname">
+						<a href="" ng-click="takersSort('firstname')">Firstname</a>
+						<span class="hSpacer" ng-class="cssChevronsTri('firstname')"></span>
+					</th>
+					<th class="colGender">
+						<a href="" ng-click="takersSort('gender')">Gender</a>
+						<span class="hSpacer" ng-class="cssChevronsTri('gender')"></span>
+					</th>
+					<th class="colEmail">
+						<a href="" ng-click="takersSort('email')">Email</a>
+						<span class="hSpacer" ng-class="cssChevronsTri('email')"></span>
+					</th>
+					<th class="colAddress">
+						<a href="" ng-click="takersSort('address')">Address</a>
+						<span class="hSpacer" ng-class="cssChevronsTri('address')"></span>
+					</th>			
+					<th class="colAction">Action</th>
+				</tr>
+			</thead>       
+
+			<tbody ng-repeat="taker in allTakers | filter:searchText | orderBy:champTri:triDescendant" >
+				<tr class="clickable">
+					<td class="colLastname" ng-click="selTaker(taker,$index)" ng-class="{sel:selIdx==$index}"><a href="">{{taker.lastname}}</a></td>
+					<td class="colFirstname" ng-click="selTaker(taker,$index)">{{taker.firstname}}</td>
+					<td class="colGender" ng-click="selTaker(taker,$index)">{{taker.gender}}</td>
+					<td class="colEmail" ng-click="selTaker(taker,$index)">{{taker.email}}</td>		
+					<td class="colAddress" ng-click="selTaker(taker,$index)">{{taker.address}}</td>		
+				
+					<td class="colAction">
+						<a href="#/edit-takers/{{$index}}" class="inline btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> 
+						<button class="inline btn btn-default" data-ng-click="confirmDelTaker($index)">
+							<span class="glyphicon glyphicon-remove"></span>
+						</button>		
+					</td>
+				</tr>
+			</tbody> 	
+		</table>
+
+
+	</div>	
